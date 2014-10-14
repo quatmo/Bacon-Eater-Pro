@@ -1,18 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaconStateScript : MonoBehaviour {
+public class BaconStateScript : MonoBehaviour
+{
     public string baconState;
     public float timeInPan;
-	// Use this for initialization
-	void Start () {
+    float baconTimeModifier;
+    // Use this for initialization
+    void Start()
+    {
         baconState = "raw";
         timeInPan = 0;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	    if (baconState == "chewy")
+        baconTimeModifier = Random.RandomRange(1f, 15f);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        CheckBaconState();
+        if (baconState == "chewy")
         {
 
         }
@@ -24,28 +30,29 @@ public class BaconStateScript : MonoBehaviour {
         {
 
         }
-	}
+    }
 
     void CheckBaconState()
     {
-        if (timeInPan >= 30)
+        if (timeInPan >= 30 - baconTimeModifier)
         {
             baconState = "chewy";
         }
-        else if (timeInPan >= 60)
+        if (timeInPan >= 60 - baconTimeModifier)
         {
             baconState = "crispy";
         }
-        else if (timeInPan >= 90)
+        if (timeInPan >= 90 - baconTimeModifier)
         {
             baconState = "burnt";
         }
     }
 
-    void OnCollisionStay2D(Collision2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Frying Pan")
+        if (col.gameObject.name == "Frying Pan")
         {
+            Debug.Log("Bacon Staying In Pan");
             timeInPan += Time.deltaTime;
         }
     }
