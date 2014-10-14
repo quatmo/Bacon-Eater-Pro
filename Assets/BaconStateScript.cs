@@ -6,9 +6,15 @@ public class BaconStateScript : MonoBehaviour
     public string baconState;
     public float timeInPan;
     float baconTimeModifier;
+    public Sprite rawBacon;
+    public Sprite chewyBacon;
+    public Sprite crispyBacon;
+    public Sprite burntBacon;
+    SpriteRenderer spriteRender;
     // Use this for initialization
     void Start()
     {
+        spriteRender = gameObject.GetComponent<SpriteRenderer>();
         baconState = "raw";
         timeInPan = 0;
         baconTimeModifier = Random.RandomRange(1f, 15f);
@@ -20,15 +26,15 @@ public class BaconStateScript : MonoBehaviour
         CheckBaconState();
         if (baconState == "chewy")
         {
-
+            spriteRender.sprite = chewyBacon;
         }
         else if (baconState == "crispy")
         {
-
+            spriteRender.sprite = crispyBacon;
         }
         else if (baconState == "burnt")
         {
-
+            spriteRender.sprite = burntBacon;
         }
     }
 
