@@ -333,9 +333,11 @@ GameObject:
   - 4: {fileID: 1142680996}
   - 212: {fileID: 1142680998}
   - 95: {fileID: 1142680997}
+  - 114: {fileID: 1142680999}
+  - 60: {fileID: 1142681000}
   m_Layer: 0
   m_Name: Customer
-  m_TagString: Untagged
+  m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,6 +391,68 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2d96d7436b30a2740ac0091879fb7498, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1142680999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142680995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f8db0c766305f4e9797e30ceefeac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1142680997}
+--- !u!60 &1142681000
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142680995}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: .709999979, y: -.720000029}
+      - {x: .959999979, y: -.449999988}
+      - {x: .99000001, y: -.25}
+      - {x: 1.02999997, y: -.109999999}
+      - {x: 1.02999997, y: -.100000001}
+      - {x: .980000019, y: -.00999999978}
+      - {x: 1.02999997, y: .0599999987}
+      - {x: 1.02999997, y: .400000006}
+      - {x: 1.00999999, y: .610000014}
+      - {x: .99000001, y: .870000005}
+      - {x: .970000029, y: .99000001}
+      - {x: .920000017, y: 1.07000005}
+      - {x: .829999983, y: 1.15999997}
+      - {x: .610000014, y: 1.27999997}
+      - {x: .360000014, y: 1.38999999}
+      - {x: .300000012, y: 1.39999998}
+      - {x: .0500000007, y: 1.39999998}
+      - {x: -.189999998, y: 1.38}
+      - {x: -.430000007, y: 1.29999995}
+      - {x: -.620000005, y: 1.20000005}
+      - {x: -.720000029, y: 1.13999999}
+      - {x: -.800000012, y: 1.04999995}
+      - {x: -.980000019, y: .74000001}
+      - {x: -1.00999999, y: .569999993}
+      - {x: -1.01999998, y: .519999981}
+      - {x: -1.01999998, y: .280000001}
+      - {x: -1.00999999, y: .189999998}
+      - {x: -.949999988, y: .0399999991}
+      - {x: -.879999995, y: -.340000004}
+      - {x: -.800000012, y: -.5}
+      - {x: -.720000029, y: -.560000002}
+      - {x: -.629999995, y: -.769999981}
+      - {x: -.449999988, y: -.99000001}
+      - {x: -.239999995, y: -1.14999998}
+      - {x: -.129999995, y: -1.19000006}
+      - {x: .170000002, y: -1.19000006}
+      - {x: .310000002, y: -1.15999997}
+      - {x: .569999993, y: -.920000017}
+      - {x: .670000017, y: -.790000021}
 --- !u!1 &1184475049
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,7 +829,7 @@ GameObject:
   - 50: {fileID: 2066630708}
   m_Layer: 0
   m_Name: Bacon
-  m_TagString: Untagged
+  m_TagString: Bacon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -798,6 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c6c5b217d32604f881cb1a7bfeb54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onFace: 0
 --- !u!212 &2066630705
 SpriteRenderer:
   m_ObjectHideFlags: 0

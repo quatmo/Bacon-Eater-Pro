@@ -1,0 +1,12 @@
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\obj\Debug\Assembly-CSharp.dll
+C:\Users\Nick\Documents\GitHub\Bacon-Eater-Pro\obj\Debug\Assembly-CSharp.pdb
