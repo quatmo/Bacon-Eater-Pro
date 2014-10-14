@@ -52,8 +52,10 @@ public class BaconStateScript : MonoBehaviour
     {
         if (col.gameObject.name == "Frying Pan")
         {
+            GameObject fryingPan = col.gameObject;
+            float temperatureModifier = fryingPan.GetComponent<FryingPanScript>().temperatureModifier;
             Debug.Log("Bacon Staying In Pan");
-            timeInPan += Time.deltaTime;
+            timeInPan += Time.deltaTime * temperatureModifier;
         }
     }
 }
