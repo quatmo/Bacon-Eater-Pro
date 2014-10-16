@@ -189,6 +189,214 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnerState: 
+--- !u!1 &438875168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 438875173}
+  - 212: {fileID: 438875172}
+  - 60: {fileID: 438875171}
+  - 114: {fileID: 438875170}
+  - 82: {fileID: 438875169}
+  m_Layer: 0
+  m_Name: Frying Pan Right
+  m_TagString: Frying Pan
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &438875169
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 438875168}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 278ba7a09f649194d8218a59dc74f5c7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 1
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: .5
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &438875170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 438875168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585b848e334b3a94d99d88512fb0175a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temperatureModifier: 0
+  burner: {fileID: 346224004}
+  burnState: 
+--- !u!60 &438875171
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 438875168}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: 1.27999997, y: -1.07000005}
+      - {x: 1.39999998, y: -.99000001}
+      - {x: 1.51999998, y: -.879999995}
+      - {x: 1.60000002, y: -.790000021}
+      - {x: 1.72000003, y: -.610000014}
+      - {x: 1.79999995, y: -.449999988}
+      - {x: 1.83000004, y: -.360000014}
+      - {x: 1.88, y: -.140000001}
+      - {x: 1.88, y: .140000001}
+      - {x: 1.87, y: .200000003}
+      - {x: 1.84000003, y: .340000004}
+      - {x: 1.82000005, y: .419999987}
+      - {x: 1.78999996, y: .5}
+      - {x: 1.72000003, y: .639999986}
+      - {x: 1.63, y: .790000021}
+      - {x: 1.47000003, y: .959999979}
+      - {x: 1.28999996, y: 1.10000002}
+      - {x: 1.19000006, y: 1.14999998}
+      - {x: 1.00999999, y: 1.23000002}
+      - {x: .889999986, y: 1.25999999}
+      - {x: .790000021, y: 1.27999997}
+      - {x: .709999979, y: 1.28999996}
+      - {x: .5, y: 1.28999996}
+      - {x: .439999998, y: 1.27999997}
+      - {x: .25, y: 1.24000001}
+      - {x: .140000001, y: 1.20000005}
+      - {x: .0700000003, y: 1.16999996}
+      - {x: -.0199999996, y: 1.12}
+      - {x: -.0900000036, y: 1.08000004}
+      - {x: -.200000003, y: 1.00999999}
+      - {x: -.310000002, y: .889999986}
+      - {x: -.379999995, y: .819999993}
+      - {x: -.439999998, y: .74000001}
+      - {x: -.569999993, y: .529999971}
+      - {x: -.620000005, y: .389999986}
+      - {x: -.649999976, y: .200000003}
+      - {x: -.660000026, y: .119999997}
+      - {x: -.75999999, y: 0}
+      - {x: -.889999986, y: -.0199999996}
+      - {x: -.939999998, y: -.0299999993}
+      - {x: -1.66999996, y: -.180000007}
+      - {x: -1.78999996, y: -.200000003}
+      - {x: -1.83000004, y: -.209999993}
+      - {x: -1.88, y: -.25999999}
+      - {x: -1.88, y: -.340000004}
+      - {x: -1.83000004, y: -.639999986}
+      - {x: -1.79999995, y: -.730000019}
+      - {x: -1.71000004, y: -.74000001}
+      - {x: -1.65999997, y: -.720000029}
+      - {x: -1.17999995, y: -.620000005}
+      - {x: -.74000001, y: -.529999971}
+      - {x: -.699999988, y: -.519999981}
+      - {x: -.560000002, y: -.479999989}
+      - {x: -.540000021, y: -.529999971}
+      - {x: -.519999981, y: -.569999993}
+      - {x: -.469999999, y: -.660000026}
+      - {x: -.389999986, y: -.779999971}
+      - {x: -.200000003, y: -.970000029}
+      - {x: -.100000001, y: -1.03999996}
+      - {x: .0299999993, y: -1.12}
+      - {x: .159999996, y: -1.17999995}
+      - {x: .330000013, y: -1.23000002}
+      - {x: .430000007, y: -1.25}
+      - {x: .560000002, y: -1.25999999}
+      - {x: .660000026, y: -1.25999999}
+      - {x: .819999993, y: -1.25}
+      - {x: .920000017, y: -1.23000002}
+      - {x: 1.11000001, y: -1.15999997}
+    - - {x: -1.58000004, y: -.370000005}
+      - {x: -1.36000001, y: -.349999994}
+      - {x: -1.35000002, y: -.389999986}
+      - {x: -1.54999995, y: -.439999998}
+--- !u!212 &438875172
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 438875168}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 612878963
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d5fccc3d0706e7d4fa5921d1cacb968e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &438875173
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 438875168}
+  m_LocalRotation: {x: 0, y: 0, z: .192779005, w: -.981242239}
+  m_LocalPosition: {x: 2.2729001, y: .203659996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &982014163
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +561,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!95 &1142680997
 Animator:
   serializedVersion: 3
@@ -462,6 +670,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1184475051}
   - 212: {fileID: 1184475050}
+  - 114: {fileID: 1184475053}
+  - 58: {fileID: 1184475052}
   m_Layer: 0
   m_Name: Button Right
   m_TagString: Untagged
@@ -502,7 +712,30 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
+--- !u!58 &1184475052
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184475049}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .400000006
+  m_Center: {x: 0, y: 0}
+--- !u!114 &1184475053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184475049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b919574fb7c23f4fa29abb762d7e253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  burner: {fileID: 1770306503}
 --- !u!1 &1719782754
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +862,7 @@ GameObject:
   - 114: {fileID: 1981714263}
   - 82: {fileID: 1981714265}
   m_Layer: 0
-  m_Name: Frying Pan
+  m_Name: Frying Pan Left
   m_TagString: Frying Pan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -682,6 +915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   temperatureModifier: 0
   burner: {fileID: 346224004}
+  burnState: 
 --- !u!60 &1981714264
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -778,12 +1012,12 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
-  Mute: 0
+  Mute: 1
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0
+  Pan2D: -.5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -832,6 +1066,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2022610318}
   - 212: {fileID: 2022610317}
+  - 114: {fileID: 2022610320}
+  - 58: {fileID: 2022610319}
   m_Layer: 0
   m_Name: Button Left
   m_TagString: Untagged
@@ -872,7 +1108,30 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
+--- !u!58 &2022610319
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022610316}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .400000006
+  m_Center: {x: 0, y: 0}
+--- !u!114 &2022610320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022610316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b919574fb7c23f4fa29abb762d7e253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  burner: {fileID: 346224004}
 --- !u!1 &2066630702
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,8 +1143,8 @@ GameObject:
   - 212: {fileID: 2066630705}
   - 114: {fileID: 2066630704}
   - 114: {fileID: 2066630703}
-  - 58: {fileID: 2066630707}
   - 50: {fileID: 2066630708}
+  - 61: {fileID: 2066630707}
   m_Layer: 0
   m_Name: Bacon
   m_TagString: Bacon
@@ -955,9 +1214,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
---- !u!58 &2066630707
-CircleCollider2D:
+  m_RootOrder: 6
+--- !u!61 &2066630707
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -965,7 +1224,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Size: {x: 1.60000002, y: .550000012}
   m_Center: {x: 0, y: 0}
 --- !u!50 &2066630708
 Rigidbody2D:

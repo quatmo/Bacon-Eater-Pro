@@ -4,7 +4,7 @@ using System.Collections;
 public class FryingPanScript : MonoBehaviour {
     public float temperatureModifier;
     public GameObject burner;
-    string burnState;
+    public string burnState;
 	// Use this for initialization
 	void Start () {
 	    

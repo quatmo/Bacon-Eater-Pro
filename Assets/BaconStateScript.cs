@@ -56,12 +56,29 @@ public class BaconStateScript : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.name == "Frying Pan")
+        if (col.gameObject.tag == "Frying Pan")
         {
             GameObject fryingPan = col.gameObject;
+            AudioSource fryingPanAudio = col.gameObject.GetComponent<AudioSource>();
+            //if (fryingPan.GetComponent<FryingPanScript>().burnState != "off")
+            //{
+            //    fryingPanAudio.mute = true;
+            //}
+            //else
+            //{
+                fryingPanAudio.mute = false;
+            //}
             float temperatureModifier = fryingPan.GetComponent<FryingPanScript>().temperatureModifier;
             Debug.Log("Bacon Staying In Pan");
             timeInPan += Time.deltaTime * temperatureModifier;
+        }
+    }
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Frying Pan")
+        {
+            AudioSource fryingPanAudio = col.gameObject.GetComponent<AudioSource>();
+            fryingPanAudio.mute = true;
         }
     }
 }
