@@ -7,6 +7,7 @@ public class SpawnerScript : MonoBehaviour {
 	public float timeToSpawn; //Time it takes to spawn a new object. 
 	float spawnTimer;
 	public Vector3 spawnPosition;
+    public bool spawnRandomlyAround;
 
 	// Use this for initialization
 	void Start () {
@@ -23,12 +24,24 @@ public class SpawnerScript : MonoBehaviour {
 		spawnTimer += Time.deltaTime;
 		if (spawnTimer > timeToSpawn)
 		{
-			Spawn();
+            if (!spawnRandomlyAround)
+                Spawn();
+
+            else if (spawnRandomlyAround)
+                SpawnRandomlyAround();
+
 			spawnTimer = 0f;
 		}
 	}
 
+    void SpawnRandomlyAround()
+    {
+        Random.seed = (int)System.DateTime.Now.ToBinary();
+        Vector3 randomLocation = new Vector3(spawnPosition.x + Random.Range(-3f, 3f), spawnPosition.y + Random.Range(-.5f, .5f), 0f);
+        GameObject objectSpawned = (GameObject)Instantiate(objectToSpawn, randomLocation, new Quaternion(0f, 0f, 0f, 0f));
+    }
+
 	void Spawn () {
-		GameObject spawnedObject = (GameObject)Instantiate(objectToSpawn, spawnPosition, new Quaternion(0f,0f,0f,0f));
+        GameObject objectSpawned = (GameObject)Instantiate(objectToSpawn, spawnPosition, new Quaternion(0f, 0f, 0f, 0f));
 	}
 }

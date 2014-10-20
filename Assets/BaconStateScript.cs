@@ -69,7 +69,7 @@ public class BaconStateScript : MonoBehaviour
                 fryingPanAudio.mute = false;
             //}
             float temperatureModifier = fryingPan.GetComponent<FryingPanScript>().temperatureModifier;
-            Debug.Log("Bacon Staying In Pan");
+            //Debug.Log("Bacon Staying In Pan");
             timeInPan += Time.deltaTime * temperatureModifier;
         }
     }

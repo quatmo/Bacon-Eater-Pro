@@ -126,15 +126,15 @@ Transform:
   - {fileID: 1719782755}
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1 &334790746
+--- !u!1 &249499399
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 334790748}
-  - 114: {fileID: 334790747}
+  - 4: {fileID: 249499401}
+  - 114: {fileID: 249499400}
   m_Layer: 0
   m_Name: BaconSpawner
   m_TagString: Untagged
@@ -142,32 +142,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &334790747
+--- !u!114 &249499400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 334790746}
-  m_Enabled: 0
+  m_GameObject: {fileID: 249499399}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5970076fd96ad40859b9d3a4bec4af23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 100000, guid: 08d340c09d6794768a01bdd849721475, type: 2}
   timeToSpawn: 5
-  spawnPosition: {x: -1, y: -2, z: 0}
---- !u!4 &334790748
+  spawnPosition: {x: 0, y: -2.79999995, z: 0}
+  spawnRandomlyAround: 1
+--- !u!4 &249499401
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 334790746}
+  m_GameObject: {fileID: 249499399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1 &346224004
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +436,7 @@ Transform:
   m_GameObject: {fileID: 438875168}
   m_LocalRotation: {x: 0, y: 0, z: .192779005, w: -.981242239}
   m_LocalPosition: {x: 2.2729001, y: .203659996, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.10000002, y: 1.10000002, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -585,9 +586,7 @@ GameObject:
   - 95: {fileID: 1142680997}
   - 114: {fileID: 1142680999}
   - 60: {fileID: 1142681000}
-  - 114: {fileID: 1142681003}
   - 114: {fileID: 1142681002}
-  - 114: {fileID: 1142681001}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Customer
@@ -710,20 +709,6 @@ PolygonCollider2D:
       - {x: .310000002, y: -1.15999997}
       - {x: .569999993, y: -.920000017}
       - {x: .670000017, y: -.790000021}
---- !u!114 &1142681001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1142680995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5970076fd96ad40859b9d3a4bec4af23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 0}
-  timeToSpawn: 0
-  spawnPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1142681002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,22 +725,6 @@ MonoBehaviour:
   timer: 0
   moveLeft: 1
   moveDistance: 1
---- !u!114 &1142681003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 6cf52fcb0db054b3eafd3647002b5f74,
-    type: 2}
-  m_PrefabInternal: {fileID: 1862692179}
-  m_GameObject: {fileID: 1142680995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc0fac6e462a4b98a9cfc764386ea60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenMoves: 0
-  timer: 0
-  moveLeft: 0
-  moveDistance: 0
 --- !u!1 &1184475049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,7 +996,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 6cf52fcb0db054b3eafd3647002b5f74, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6cf52fcb0db054b3eafd3647002b5f74, type: 2}
   m_RootGameObject: {fileID: 1142680995}
   m_IsPrefabParent: 0
@@ -1081,7 +1051,7 @@ Transform:
   m_GameObject: {fileID: 1981714260}
   m_LocalRotation: {x: 0, y: 0, z: .923545241, w: .383489609}
   m_LocalPosition: {x: -2.04089308, y: -.389773816, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.10000002, y: 1.10000002, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1345,6 +1315,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 100000, guid: 6cf52fcb0db054b3eafd3647002b5f74, type: 2}
   timeToSpawn: 10
   spawnPosition: {x: 6.5, y: 2.70000005, z: 0}
+  spawnRandomlyAround: 0
 --- !u!4 &2054830396
 Transform:
   m_ObjectHideFlags: 0
@@ -1356,7 +1327,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1 &2066630702
 GameObject:
   m_ObjectHideFlags: 0
